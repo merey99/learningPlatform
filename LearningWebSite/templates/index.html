@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<nav>
+    <div class="logo">Logo</div>
+    <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+    <div class="navLinks">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <button type="button"><a href="{% url 'login' %}">Login</a></button>
+        </ul>
+    </div>
+</nav>
+
+   <div class="row">
+     <div class="column1">
+       <h1>Learning Platform</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum error exercitationem ipsa, necessitatibus numquam placeat saepe similique sint voluptas! Beatae dolore error explicabo nisi praesentium provident quas ullam voluptate.</p>
+       <button>PURCHASE</button>
+     </div>
+     <div class="column2">
+       <img src="https://www.hmablogs.com/wp-content/uploads/2022/06/banner-img.png" alt="banner" width="500px">
+     </div>
+   </div>
+
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+
+</head>
